@@ -17,13 +17,14 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
+  background-color: #007bff;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
+  border-radius: 6px;
 }
 
 button:hover {
@@ -113,6 +114,12 @@ span.psw {
   to {transform: scale(1)}
 }
 
+.c-footer {
+    padding-top: 10px;
+	padding-bottom: 10px;
+    background: #1A6795;
+    color: #FFF;
+
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.psw {
@@ -128,13 +135,30 @@ span.psw {
 <body>
 
 <div style="text-align:center;">
-<h2>Page Login Demo</h2>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+</br>
+
+	<div>
+		<a href="#"><img src="img/header.gif" alt="footer" style="width: 420px;"></a>
+	</div>
+	
+</br>
+
+	<iframe src ="https://covid19.vnanet.vn/home/indexwigetsummary" frameborder="0" width="100%" style="min-height: 250px;" ></iframe>
+	<iframe src ="https://covid19.vnanet.vn/home/indexwiget" frameborder="0" width="100%" style="min-height: 430px;" ></iframe>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">XEM CHI TIẾT</button>
+
+<br/><br/><br/><br/>
+<div>
+	<footer class="container-fluid c-footer pb-2 mt-5 text-center">
+        <p>THÔNG TIN COVID VIỆT NAM</p>
+        <p>NGUỒN TỪ HTTPS://COVID19.VNANET.VN</p>
+    </footer>
+</div>
 <div>
 <div id="id01" class="modal">
   
-  <!-- <form class="modal-content animate" action="/action_page.php" method="post"> -->
   <form class="modal-content animate" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
